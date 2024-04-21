@@ -251,6 +251,7 @@ div.card button.card-button:hover {
 }
 /* counters */
 div.counters {
+  width: var(--body-width);
   padding: 5%;
   display: flex;
   justify-content: space-between;
@@ -272,4 +273,56 @@ div.counters p.counter-item span.counter-text {
   font-weight: 800;
   font-size: 2em;
   color: var(--text-color);
+}
+
+/* accordion */
+div.accordion-container{
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+}
+div.accordion-container h4{
+  text-align: center;
+  font-family: var(--font-family-headings);
+  color: var(--text-color);
+  font-weight: 1000;
+  font-size: 2.5em;
+}
+
+div.accordion{
+  background: var(--navigation);
+  margin: 2%;
+  padding: 5%;
+  border-radius: 20px;
+}
+div.accordion button.accordion-button{
+  border: none;
+  width: 100%;
+  text-align: left;
+  background: var(--navigation);
+  font-family: var(--font-family-text);
+  font-size: 1.5em;
+  font-weight: normal;
+  padding:10px;
+  
+}
+div.accordion button.accordion-button i{
+  float: right;
+  margin: auto;
+}
+div.accordion button.accordion-button:hover{
+  background: #9d9d90;
+  cursor: pointer;
+  border-radius: 20px;
+}
+div.accordion p.accordion-text{
+  font-family: var(--font-family-text);
+  font-size: 1.2em;
+  font-weight: normal;
+  padding-top:5px;
+  display: none;
+}
+
+.accordion-active{
+  display: block;
 }
