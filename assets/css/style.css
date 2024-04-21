@@ -157,68 +157,67 @@ main div.jumbotron {
 }
 
 main div.jumbotron h2 {
-  color: rgba(35, 35, 35,1);
+  color: rgba(35, 35, 35, 1);
   font-family: var(--font-family-headings);
   font-weight: 900;
   font-size: 2em;
 }
-main div.jumbotron ul{
+main div.jumbotron ul {
   list-style: none;
   /* padding: 10%; */
 }
-main div.jumbotron ul li{
+main div.jumbotron ul li {
   font-family: var(--font-family-text);
   font-weight: normal;
   font-size: 1.5em;
   padding: 5px;
 }
-main div.jumbotron ul li i{
+main div.jumbotron ul li i {
   color: var(--text-color);
   margin-right: 5px;
 }
 
-main div.features h2{
-  color: rgba(35, 35, 35,1);
+main div.features h2 {
+  color: rgba(35, 35, 35, 1);
   font-family: var(--font-family-headings);
   font-weight: 1000;
   font-size: 3em;
   text-align: center;
   padding-top: 5%;
-
 }
-main div.features p{
+main div.features p {
   font-family: var(--font-family-text);
   font-weight: normal;
   font-size: 1.5em;
-  text-align: center; 
+  text-align: center;
   padding-top: 1%;
 }
-main div.features-container{
+main div.features-container {
   display: flex;
   justify-content: space-around;
 }
-div.card{
+div.card {
   margin: 4%;
   border-radius: 8%;
   flex-basis: 32%;
   background: var(--navigation);
 }
-div.card:hover{
+div.card:hover {
   cursor: pointer;
 }
-div.card img{
+div.card img {
   max-width: 100%;
   height: auto;
   border-radius: 8%;
 }
-div.card h5.card-title{
+div.card h5.card-title {
   font-family: var(--font-family-headings);
   font-weight: 700;
   font-size: 1.5em;
   padding: 5%;
   color: var(--text-color);
 }
-div.card p.card-text{
+div.card p.card-text {
   font-family: var(--font-family-text);
   font-size: 1.1em;
   padding: 0px 5%;
@@ -243,11 +242,34 @@ div.card button.card-button:hover {
   cursor: pointer;
   transition: background-color 0.5s linear;
 }
-@media screen and (max-width:992px){
-  main div.features-container{
+@media screen and (max-width: 992px) {
+  main div.features-container {
     flex-direction: column;
     flex-basis: 90%;
     margin: auto;
   }
-  
+}
+/* counters */
+div.counters {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+div.counters p.counter-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: var(--font-family-text);
+}
+div.counters p.counter-item span.counter-numbers {
+  font-weight: 1000;
+  font-size: 3em;
+  color: #1982c4;
+}
+div.counters p.counter-item span.counter-text {
+  font-weight: 800;
+  font-size: 2em;
+  color: var(--text-color);
 }
