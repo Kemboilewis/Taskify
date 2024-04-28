@@ -152,7 +152,7 @@ main div.jumbotron {
   /* height: 100%; */
   /* padding:15% 10%; */
   /* height: 400px; */
-  background: url('/images/coffee.jpeg') no-repeat right;
+  background: url('../../images/coffee.jpeg') no-repeat right;
   background-size: cover;
 }
 
